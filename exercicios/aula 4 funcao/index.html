@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    let saldoAtual = 100;
+
+    function depositaValor() {
+        let deposito = parseInt(prompt('Digite o valor do seu deposito'));
+
+        if (verificaValorValido(deposito) == true) {
+            alert('Encerrando atendimento.')
+        } else {
+            saldoAtual += deposito;
+            console.log(saldoAtual);
+            let saqueSN = prompt('Gostaria de realizar alguma saque? Digte "1" para sacar ou "2" para finalizar o processo.')
+
+            if (saqueSN == '1') {
+
+                let valorSaque = parseInt(prompt(`Seu saldo diposinvel é: ${saldoAtual}. Digite o valor do saque.`));
+                verificaValorValido(valorSaque);
+                sacarValor(valorSaque);
+                alert(`O seu saque foi de ${valorSaque} restando um saldo de ${saldoAtual}. Obrigado.`)
+
+            } else if (saqueSN == "2") {
+                alert('Obrigado por usar os nosso serviços')
+            } else {
+                alert('Digito incorreto, finalizando a sessão.')
+            }
+        }
+    };
+
+    depositaValor()
+
+    function sacarValor(valorSaque) {
+        saldoAtual -= valorSaque
+        return
+    }
+
+    function verificaValorValido(deposito, valorSaque) {
+        if (deposito <= 0 || deposito >= 5000) {
+            alert('Dados digitados incorretos ou o valor Digitado é acima de R$5.000 recarregue a pagina e tente novamente.')
+            return true
+        }
+    }
+
+</script>
+
+</html>
