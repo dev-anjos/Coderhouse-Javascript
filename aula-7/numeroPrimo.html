@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificaPrimo (num){
+            if(num % 2 === 0  || num === 2) true;
+            for (let i = 2; i < num; i++){
+                if(num % i === 0 ) return console.log('nào é primo')
+            }
+            return console.log('é primo');
+        }
+
+        console.log(verificaPrimo(6));
+    </script>
+</body>
+</html>

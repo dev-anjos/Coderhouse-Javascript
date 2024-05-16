@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function estacaoAno(mes) {
+            let mes = prompt('digite o mes em numeral')
+            mes = mes.toLowerCase();
+
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    console.log('verão');
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    console.log('outono');
+                    break
+                case 7:
+                case 8:
+                case 9:
+                    console.log('inverno');
+                    break
+                case 10:
+                case 11:
+                case 12:
+                    console.log('primavera');    
+                    break       
+                default:
+                console.log("Entrada invalida")    
+                    break;
+            }
+        }
+
+    </script>
+</body>
+</html>

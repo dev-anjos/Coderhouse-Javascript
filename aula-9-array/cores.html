@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cores = [];
+
+
+            for (let index = 0; index < 5; index++) {
+                let valor = prompt('Digite uma cor')
+                cores.push(valor)
+            }
+
+            console.log(cores)
+
+            let valor = prompt(`Digite o nome da cor a ser removida `);
+            let indice = cores.indexOf(valor);
+
+            if (indice !== -1) {
+                cores.splice(indice, 1);
+                console.log('Array apos a remoçào', cores)
+            } else {
+                console.log('Valor nao encontrado')
+            }
+
+            for (let index = 0; index < cores.length; index++) {
+                console.log("Na posição " + i + "nos temos" + cores[index])
+                
+            };
+
+            let corInserida = prompt('Digite a cor que deseja')
+
+    </script>
+</body>
+</html>

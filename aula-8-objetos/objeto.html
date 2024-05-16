@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fruta (nome,cor,peso){
+            this.nome = nome;
+            this.cor = cor;
+            this.peso = peso;
+        }
+
+        const banana = new fruta("Banana", "Amarela", 30)
+        const maca = new fruta("Maçã", "Vermelha", 40)
+       
+        console.log(banana.nome.length)
+        console.log(banana.cor.toUpperCase());
+        console.log(banana.nome.toLowerCase());
+       
+        for (const propriedades in banana) {
+           console.log(`${propriedades} = ${banana[propriedades]}`)
+        }
+
+    </script>
+</body>
+</html>

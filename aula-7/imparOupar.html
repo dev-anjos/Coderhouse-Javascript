@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numeroRecebido =  parseInt(prompt('Digite numero para verificar se ele é par ou impar'));
+
+
+        
+        
+        function verificarParImpa (){
+            
+            if( numeroRecebido <= 0 ||  isNaN(numeroRecebido)) {
+                alert("O numero digitado invalido, recarregue a pagina")
+            }
+            else if( numeroRecebido % 2 == 0){
+                alert(`O numero ${numeroRecebido} é par`)
+            }else{
+                alert(`O numero ${numeroRecebido} é impar`)
+            }
+        
+        }
+
+        verificarParImpa()
+        
+        
+    </script>
+</body>
+</html>
