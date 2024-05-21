@@ -44,6 +44,7 @@
                 let novoNome = prompt('Digite o nome correto');
                 novoAnimal.alterarNome(novoNome);
                 alert(`Nome alterado com sucesso, agora o animalzinho está cadastrado como ${novoAnimal.nome}, obrigado.`);
+                continuar = false // o loop while será parado
             }
             else if (removerNomeLowerCase == 'nao' || removerNomeLowerCase == 'não') {
                 alert('Obrigado por cadastrar o seu animalzinho')
